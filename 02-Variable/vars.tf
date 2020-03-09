@@ -1,5 +1,5 @@
-variable "CLASS_NAME {
-  default = "DEVOPS"
+variable "CLASS_NAME"{
+  default = "DevOPS"
 }
 
 output "CLASS_NAME" {
