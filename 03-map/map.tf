@@ -6,7 +6,6 @@ variable "Class_Times" {
 }
 
 output "Class_timing1" {
-  value = var.Class_Times.MORNING
-  TIME
+  value = var.Class_Times[MORNING TIME]
 }
 
