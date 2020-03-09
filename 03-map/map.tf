@@ -6,6 +6,6 @@ variable "CLASS_TIME" {
 }
 
 output "CLASS" {
-  value = var.CLASS_TIME[MORNING]
+  value = var.CLASS_TIME["MORNING""]
 }
 
