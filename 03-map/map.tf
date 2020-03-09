@@ -5,7 +5,7 @@ variable "Class_Times" {
   }
 }
 
-output "Class_timing1" {
+output "Class_timing" {
   value = var.Class_Times[MORNING TIME]
 }
 
