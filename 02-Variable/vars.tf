@@ -3,5 +3,5 @@ variable "CLASS_NAME {
 }
 
 output "CLASS_NAME" {
-  value = "var.CLASS_NAME"
+  value = var.CLASS_NAME
 }
