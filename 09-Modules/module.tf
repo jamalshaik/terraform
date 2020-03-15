@@ -7,6 +7,6 @@ module "SETUP_WEB_SERVER" {
 }
 
 
-output "WEB_ADDRESS" {
-  value = "http://${module.SETUP_WEB_SERVER.PUBLIC_IP_OF_INSTANCE}"
+output "PUBLIC_URL" {
+  value = module.SETUP_WEB_SERVER.PUBLIC_URL
 }
