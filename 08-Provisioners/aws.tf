@@ -64,6 +64,6 @@ resource "aws_instance" "web" {
 }
 
 
-output            "PUBLIC_IP_OF_INSTANCE" {
-  value                   = aws_instance.web.public_ip
+output "PUBLIC_IP_OF_INSTANCE" {
+  value                   = "http://${aws_instance.web.public_ip}"
 }
