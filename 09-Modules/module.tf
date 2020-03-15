@@ -6,7 +6,6 @@ module "SETUP_WEB_SERVER" {
   source = "./module"
 }
 
-
 output "PUBLIC_URL" {
   value = module.SETUP_WEB_SERVER.PUBLIC_URL
 }
