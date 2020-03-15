@@ -1,9 +1,9 @@
-provider            "aws" {
+provider "aws" {
   region            = "us-east-1"
 }
 
-data                "aws_ami" "defaultami" {
-  owners            = [973714476881]
+data "aws_ami" "defaultami" {
+  owners            = ["973714476881"]
   most_recent       = true
   filter {
     name            = "name"
@@ -11,15 +11,14 @@ data                "aws_ami" "defaultami" {
   }
 }
 
-resource          "aws_instance" "web" {
+resource "aws_instance" "web" {
   ami             = data.aws_ami.defaultami.id
   instance_type   = "t2.micro"
   key_name        = "devops"
 
-  tags            = {
+  tags = {
     Name          = "HelloWorld"
   }
-  owners = []
 }
 
 output            "PUBLIC_IP_OF_INSTANCE" {
