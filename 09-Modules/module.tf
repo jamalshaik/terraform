@@ -5,3 +5,8 @@ provider "aws" {
 module "SETUP_WEB_SERVER" {
   source = "./module"
 }
+
+
+output "WEB_ADDRESS" {
+  value = "http://${module.SETUP_WEB_SERVER.PUBLIC_IP_OF_INSTANCE}"
+}
